@@ -29,7 +29,9 @@ BankEase is a simple banking system implemented in C. It allows users to create 
    ```
 
 ## Usage
-Follow the on-screen instructions to create an account and perform banking operations.
+Enter the login password -- BankEase.
+You can change this password in .c file on Line 45.
+Then follow the on-screen instructions to create an account and perform banking operations.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Nishant-444/BankEase/blob/main/LICENSE) file for details.
