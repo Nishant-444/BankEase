@@ -6,6 +6,7 @@ BankEase is a simple banking system implemented in C. It allows users to create 
 - Create a new bank account
 - Deposit money
 - Withdraw money
+- Transaction between accounts
 - Check account balance
 - Secure login system
 
