@@ -81,7 +81,7 @@ void menu()
     system("cls");
     printf("\n");
     printf("\33[1;31m");
-    printf("\n\n\t\tBankEase BANKING MANAGEMENT SYSTEM ");
+    printf("\n\n\t\tBankEase Banking Management System ");
     printf("\n\n\n\t\t       \033[1;32m WELCOME TO THE MENU ");
     printf("\033[0m");
     printf("\033[1;33m");
