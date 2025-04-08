@@ -1,6 +1,8 @@
 # BankEase
 
-BankEase is a simple banking system implemented in C. It allows users to create accounts, deposit and withdraw money, and check their balances. This bank accout is in any way does not interfere with the real world currency or any other object.
+BankEase is a simple banking system implemented in C. It allows users to create accounts, deposit and withdraw money, and check their balances.
+
+> **Note:** This banking management system is a simulation for educational purposes only. It does **not** involve real currency or real financial transactions.
 
 ## Features
 - Create a new bank account
