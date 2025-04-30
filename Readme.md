@@ -1,45 +1,92 @@
-# BankEase
+# BankEase - C++ Bank Management System
 
-BankEase is a simple banking system implemented in C. It allows users to create accounts, deposit and withdraw money, and check their balances.
+**BankEase.exe** is a console-based Bank Management System written in C++ for educational purposes. It simulates basic banking operations like creating accounts, updating details, making deposits/withdrawals, viewing accounts, and storing data persistently using binary files.
 
-> **Note:** This banking management system is a simulation for educational purposes only. It does **not** involve real currency or real financial transactions.
+## 🔧 Features
 
-## Features
-- Create a new bank account
-- Deposit money
-- Withdraw money
-- Transaction between accounts
-- Check account balance
-- Secure login system
+- Create a new bank account with personal details
+- Update existing account information
+- Perform transactions (Deposit/Withdraw)
+- View account details
+- Remove account
+- View all existing accounts
+- Password-protected access (`BankEase`)
+- Data persistence using file I/O (`accounts.dat`)
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/nishant-444/BankEase.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd BankEase
-   ```
-3. Compile the program:
-   ```sh
-   gcc bankease.c -o bankease
-   ```
-4. Run the program:
-   ```sh
-   ./bankease
-   ```
+## 📁 Project Structure
 
-## Usage
-Enter the login password -- BankEase.
-You can change this password in .c file on Line 45.
-Then follow the on-screen instructions to create an account and perform banking operations.
+```
+BankEase/
+│
+├── Account.h         # Class declarations: Date, Account, BankingSystem
+├── Account.cpp       # Function definitions for the classes
+├── main.cpp          # Entry point of the program
+├── accounts.dat      # Binary file for storing account data
+└── README.md         # Project documentation
+```
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Nishant-444/BankEase/blob/main/LICENSE) file for details.
+## 🧾 Classes
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+### 1. `Date`
+- Represents a simple date structure.
+- Includes support for user input/output and file serialization.
 
-## Author
-[Nishant](www.github.com/nishant-444)
+### 2. `Account`
+- Stores user details such as name, DOB, address, balance, etc.
+- Handles deposit and withdrawal operations.
+- Supports input/output through binary serialization.
+
+### 3. `BankingSystem`
+- Core controller class managing the flow of the application.
+- Handles all user interactions and file storage.
+
+## 🔐 Login
+
+On running the application, users must enter the system password:
+
+```
+Password: BankEase
+```
+
+## 🏗️ Compilation & Execution
+
+### 📌 Requirements
+
+- C++ compiler (G++, Clang, MSVC, etc.)
+- Terminal or command prompt
+
+### 🔨 Compile
+
+Use the following command to compile the application:
+
+```bash
+g++ main.cpp Account.cpp -o BankEase.exe
+```
+
+### ▶️ Run
+
+After compilation, run the program:
+
+```bash
+./BankEase.exe     # On Linux/Mac
+BankEase.exe       # On Windows
+```
+
+## 💾 Data Storage
+
+- All accounts are saved in a binary file named `accounts.dat`.
+- Serialization is manually handled to safely store complex objects (e.g., `std::string`, `Date`).
+
+## 📚 Educational Goals
+
+This project is intended to help beginner and intermediate C++ learners practice:
+- Object-Oriented Programming (OOP)
+- File handling (Binary I/O)
+- Class design and encapsulation
+- Basic data validation and input handling
+
+## ✍️ Author
+
+> Developed by a BCA Student with a goal to prepare for FAANG-level software engineering skills.
+
+---
