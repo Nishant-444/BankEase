@@ -22,7 +22,6 @@ BankEase/
 ├── Account.cpp       # Function definitions for the classes
 ├── main.cpp          # Entry point of the program
 ├── accounts.dat      # Binary file for storing account data
-└── README.md         # Project documentation
 ```
 
 ## 🧾 Classes
